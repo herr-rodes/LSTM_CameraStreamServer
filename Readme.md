@@ -5,7 +5,7 @@ Important to say is, that the commands in the Dockerfile for the updating and pa
 
 
 # Usage
-## Bild the Image
+## Build the Image
 To build the image just start in the root directory of the project (where the DockerFile-File is stored) the following command:
 
 ```console
