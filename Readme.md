@@ -8,20 +8,20 @@ Important to say is, that the commands in the Dockerfile for the updating and pa
 ## Bild the Image
 To build the image just start in the root directory of the project (where the DockerFile-File is stored) the following command:
 
-''' bash
+'''bash
 docker build -t flask-tutorial:latest .
 '''
 
 ## Start the Container
 Flask is using Port 5000 by default. So internally the port can be changed in the python app.py file. The external port can be changed in the docker run section.
-''' bash
+'''bash
 docker run -d --name flask_webserver -p 5000:5000 flask-tutorial
 '''
 
 # Further Information and Trouble shooting
 ## Troubleshooting
 In some cases the Requirements are not up to date. So a look in 
-''' bash
+'''bash
 docker container logs flask_webserver
 '''
 
